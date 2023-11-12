@@ -1,4 +1,3 @@
-console.log('ok')
 const video$ = document.querySelector('video')
 const canvas$ = document.querySelector('canvas')
 const ctx = canvas$.getContext('2d')
@@ -18,11 +17,6 @@ const constraints = {
 
 //Информация о ширине окна устройства
 const userAgent = window.innerWidth
-// console.log(userAgent)
-
-//Список девайсов на устройстве
-const devices = await navigator.mediaDevices.enumerateDevices()
-// console.log(devices)
 
 //Получение потока и пуш в элемент видео
 navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
